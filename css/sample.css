@@ -110,8 +110,7 @@ header {
         margin-left: 70px; } }
 
 #sub_cover {
-  text-align: center;
-  padding: 80px 0;
+  padding: 40px 0;
   background-image: url("../images/news/sub_cover.jpg");
   background-size: cover; }
   #sub_cover h2 {
@@ -127,7 +126,6 @@ header {
       background-image: url("../images/news/sub_cover@2x.jpg"); } }
   @media (min-width: 550px) {
     #sub_cover {
-      text-align: left;
       padding: 80px 0; }
       #sub_cover img {
         margin-top: 180px;
@@ -215,6 +213,8 @@ header {
     font-size: 1.5rem;
     font-weight: bold;
     padding-bottom: 15px; }
+  #contents #main h2.company_title {
+    margin-bottom: 0px; }
   #contents #main .news_li {
     font-size: 15px;
     font-size: 1.5rem; }
@@ -225,13 +225,13 @@ header {
         display: block;
         font-weight: bold;
         margin-bottom: 3px; }
-  #contents #main th {
-    padding-right: 20px; }
   #contents #main td, #contents #main th {
     padding: 20px 0;
     color: #626262;
     font-size: 14px;
     font-size: 1.4rem; }
+  #contents #main th {
+    padding-right: 20px; }
   @media (min-width: 550px) {
     #contents #main h2 {
       font-size: 20px;
@@ -244,6 +244,9 @@ header {
         display: inline-block;
         margin-bottom: 0;
         padding-right: 10px; } }
+  @media (min-width: 550px) {
+    #contents #main {
+      padding-right: 20px; } }
   #contents #sidebar {
     padding-bottom: 20px; }
     #contents #sidebar .pc_sidemenu h3 {
@@ -265,7 +268,20 @@ header {
       padding: 10px 10px 10px 20px;
       background-image: url(../images/news/side_arrow.png);
       background-size: 4px 8px; }
+      #contents #sidebar .pc_sidemenu li a {
+        color: #339fd1;
+        text-decoration: none; }
+    @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      #contents #sidebar .pc_sidemenu li {
+        background-image: url(../images/news/side_arrow@2x.png); } }
+    @media (max-width: 550px) {
+      #contents #sidebar .pc_sidemenu {
+        display: none; } }
 
+@media (min-width: 551px) {
+  #contents {
+    padding-top: 35px;
+    padding-bottom: 70px; } }
 footer {
   background-color: #42b9d0;
   color: #fff;
